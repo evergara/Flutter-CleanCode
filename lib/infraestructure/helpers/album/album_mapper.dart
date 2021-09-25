@@ -4,7 +4,7 @@ import 'package:flutte_clean_code/infraestructure/helpers/common/base_mapper.dar
 class AlbumMapper implements BaseMapper<Album> {
   @override
   fromMap(Map<String, dynamic> json) => Album(
-      userId: json['userId'],
+      userId: json['albumId'],
       id: json['id'],
       title: json['title'],
       url: json['url'],

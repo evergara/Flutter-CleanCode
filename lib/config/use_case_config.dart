@@ -3,8 +3,8 @@ import 'package:flutte_clean_code/infraestructure/driven_adapter/album_api/album
 import 'package:flutte_clean_code/infraestructure/driven_adapter/album_api/album_api_delay.dart';
 
 class UseCaseConfig {
-  GetAlbumUseCase getAlbumUseCase;
-  AlbumApiDelay _albumApi;
+  late GetAlbumUseCase getAlbumUseCase;
+  late AlbumApiDelay _albumApi;
   UseCaseConfig() {
     _albumApi = AlbumApiDelay();
     getAlbumUseCase = GetAlbumUseCase(_albumApi);
